@@ -1,0 +1,27 @@
+<html>
+	<head>
+	<title>Web de ejemplo</title>
+	</head>
+	<body>
+	<h1>Mi primera WEB</h1>
+	<h2>Hola mundo</h2>
+	<p>Esto es un ejemplo de parrafo</p>
+	<ul>
+		<li>Programacion</li>
+		<li>BBDD</li>
+		<li>LLMM</li>
+		<li>ENTORNO</li>
+		<li>IPE</li>
+	</ul>
+	<p>
+	<a href="https://elfogonreal.com/wp-content/uploads/2022/11/origen-de-la-patata-1024x1024.jpg">Google</a>
+	</p>
+	<h2>Imagen ejemplo</h2>
+	<table>
+		<tr>
+		<th>LUNES</th>
+		<th>MARTES</th>
+		<th>MIERCOLES</th>
+		<th>JUEVES</th>
+		<th>VIERNES</th>
+		</tr>
