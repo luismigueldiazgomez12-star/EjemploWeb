@@ -47,6 +47,9 @@ td, th {border: 1px, solid;
         font-weight: bold;
         padding: 10px;}
 
+.H2{color:red;
+    font-style:italic;}
+
 footer {
     background: darkslategray;
     color: white;
