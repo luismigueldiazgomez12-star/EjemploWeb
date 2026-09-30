@@ -50,6 +50,21 @@ td, th {border: 1px, solid;
 .H2{color:red;
     font-style:italic;}
 
+.verdana{font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size:30px;
+        line-height: 1.5;}
+
+.bloque{display:block;
+        border: 1px solid blue; 
+        background-color:grey;
+        padding: 10px;}
+
+.imagen{width: 300px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        margin: auto;}
+
 footer {
     background: darkslategray;
     color: white;
