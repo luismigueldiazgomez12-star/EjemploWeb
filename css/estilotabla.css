@@ -1,0 +1,32 @@
+.table1 {border: 2px solid blue;
+         padding: 15px;
+     
+}
+
+.td1 {border: 2px solid blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.tdgrey {border: 2px solid yellow;
+    padding: 15px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.tdverde {border: 2px solid yellow;
+    padding: 15px;
+    background-color: greenyellow;
+    text-align: center;
+}
+
+.th2{border: 2px solid yellow;
+    padding: 15px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.table2 {border-collapse: collapse;
+         border: 2px solid yellow;
+         padding: 15px;
+}

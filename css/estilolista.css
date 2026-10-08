@@ -1,0 +1,7 @@
+div {display: block;
+     border-radius: 10%;
+     background-color: cyan;
+     padding: 10px;
+     text-align: center;
+     font-weight: bold;
+ }
