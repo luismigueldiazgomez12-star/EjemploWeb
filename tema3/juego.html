@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Piedra, Papel o Tijera</title>
+    <script src="../JS/juego.js"></script>
+    <link rel="stylesheet" href="../css/estilo_ejemplo.css">
+</head>
+<body>
+
+    <h1>Juego de Piedra, Papel o Tijera</h1>
+    <div class="container">
+        <div class="jugador">
+            <h2>Jugador</h2>
+            <button type="button" onclick="juego('piedra')">Piedra</button>
+            <button type="button" onclick="juego('papel')">Papel</button>
+            <button type="button" onclick="juego('tijera')">Tijera</button>
+        </div>
+
+        <p id="marcador">Partidas jugadas: 0</p>
+        <p id="ganadas">Ganadas: 0</p>
+        <p id="empatadas">Empatadas: 0</p>
+        <p id="perdidas">Derrotas: 0</p>
+        
+        <section id="resultado">
+            <h2>Resultado:</h2>
+            <p id="jugada-jugador">Tu jugada aparecera aqui.</p>
+            <p id="jugada-maquina">La jugada de la maquina aparecerá.</p>
+            <p id="mensaje"></p>
+        </section>
+</body>
