@@ -42,11 +42,11 @@ header {
            display: inline-block;}
 
 .dropdown summary {
-            list-style: none; /* Elimina la flecha predeterminada del navegador */
-            background-color: #3b4d6b; /* Color azul oscuro/grisáceo del botón */
+            list-style: none;
+            background-color: #3b4d6b;
             color: #ffffff;
             padding: 12px 24px;
-            border-radius: 30px; /* Bordes redondeados tipo píldora */
+            border-radius: 30px;
             cursor: pointer;
             font-size: 16px;
             font-weight: 500;
@@ -60,9 +60,9 @@ header {
 
 .dropdown-menu {
             position: absolute;
-            top: calc(100% + 8px); /* Se posiciona justo debajo con un pequeño margen */
+            top: calc(100% + 8px);
             left: 0;
-            background-color: #f0f2f5; /* Color gris claro de la caja flotante */
+            background-color: #f0f2f5;
             min-width: 230px;
             border-radius: 6px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

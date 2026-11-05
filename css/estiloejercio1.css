@@ -1,82 +1,191 @@
-body {background-image: url("../fotos/dahlia-flower-free-png.webp");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;}
-
-.h4 {text-align: center;
-    font-weight: bold;
-    color: red;
+:root {
+    --azul-profundo: #183b4b;
+    --azul-medio: #315d70;
+    --azul-claro: #eaf2f5;
+    --acento: #d7a85b;
+    --texto: #24343b;
+    --blanco: #ffffff;
+    --borde: rgba(24, 59, 75, 0.18);
+    --sombra: 0 8px 24px rgba(16, 42, 54, 0.18);
 }
 
-.table {padding:20px;
-        background-color: orange;
-        border: 1px solid orange;
-        color: white;
-        font-family: Sans-serif;}
+body {
+    background-image:
+        linear-gradient(rgba(13, 35, 45, 0.24), rgba(13, 35, 45, 0.24)),
+        url("../fotos/dahlia-flower-free-png.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+}
 
-pre {font-style:Courier;
-      text-align: left;}
-    
-.bloque{display:block;
-        border: 3px solid black; 
-        background-color:royalblue;
-        padding: 40px;
-        text-decoration: none;
-        color: black;
-        margin-top: auto;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        margin: 10px;
-        width: auto;}
+.h4 {
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+    font-size: clamp(22px, 3vw, 32px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+    margin: 22px 0;
+}
+
+.table {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.94);
+    border: 1px solid var(--borde);
+    border-radius: 14px;
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    box-shadow: var(--sombra);
+    backdrop-filter: blur(5px);
+}
+
+pre {
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: var(--texto);
+}
+
+.bloque {
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: linear-gradient(135deg, #244f70, #397b91);
+    padding: 20px 26px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    width: auto;
+    max-width: calc(100% - 20px);
+    border-radius: 14px;
+    box-shadow: var(--sombra);
+    z-index: 90;
+}
 
 header {
-    background-color: darkslategray;
+    background: linear-gradient(120deg, var(--azul-profundo), var(--azul-medio));
     display: flex;
-    color: white;
-    align-items: center;   
-    padding: 15px 20px;}
+    color: var(--blanco);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 18px 26px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+}
 
-.dropdown {position: relative;
-           display: inline-block;}
-    
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown summary {
-            list-style: none; /* Elimina la flecha predeterminada del navegador */
-            background-color: #3b4d6b; /* Color azul oscuro/grisáceo del botón */
-            color: #ffffff;
-            padding: 12px 24px;
-            border-radius: 30px; /* Bordes redondeados tipo píldora */
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 15px;
-            user-select: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.2s;}
+    list-style: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    padding: 12px 22px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    user-select: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.16);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown summary::after {
+    content: "▾";
+    font-size: 13px;
+    transition: transform 0.2s ease;
+}
+
+.dropdown[open] summary::after {
+    transform: rotate(180deg);
+}
+
+.dropdown summary:hover {
+    background-color: rgba(255, 255, 255, 0.23);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown summary:focus-visible,
+.dropdown-menu li a:focus-visible {
+    outline: 3px solid var(--acento);
+    outline-offset: 3px;
+}
 
 .dropdown-menu {
-            position: absolute;
-            top: calc(100% + 8px); /* Se posiciona justo debajo con un pequeño margen */
-            left: 0;
-            background-color: #f0f2f5; /* Color gris claro de la caja flotante */
-            min-width: 230px;
-            border-radius: 6px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            list-style: none;
-            padding: 8px 0;
-            margin: 0;
-            z-index: 100;}
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    min-width: 230px;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+}
 
 .dropdown-menu li a {
-            display: block;
-            padding: 10px 20px;
-            color: #1a2238;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            transition: background-color 0.2s;}
+    display: block;
+    padding: 10px 15px;
+    color: var(--texto);
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease, padding-left 0.2s ease;
+}
 
+.dropdown-menu li a:hover {
+    background-color: var(--azul-claro);
+    color: var(--azul-profundo);
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
+    }
+
+    header {
+        padding: 15px 16px;
+        align-items: flex-start;
+    }
+
+    .table {
+        padding: 14px;
+    }
+
+    .bloque {
+        padding: 15px 18px;
+    }
+
+    .dropdown-menu {
+        min-width: 210px;
+        max-width: calc(100vw - 32px);
+    }
+}
