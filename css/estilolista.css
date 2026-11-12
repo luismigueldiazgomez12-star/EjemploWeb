@@ -1,9 +1,29 @@
-div {display: block;
-     border-radius: 10%;
-     background-color: cyan;
-     padding: 10px;
-     text-align: center;
-     font-weight: bold;
+:root {
+    --azul-oscuro: #193b4a;
+    --azul: #315f73;
+    --azul-suave: #eaf2f5;
+    --fondo-claro: #f5f8fa;
+    --texto: #263943;
+    --acento: #d5a65b;
+    --sombra: 0 8px 22px rgba(25, 59, 74, 0.14);
+}
+
+body {
+    background-color: var(--fondo-claro);
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+}
+
+div {
+    display: block;
+    border-radius: 14px;
+    background-color: #e8f3f5;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 3px 12px rgba(25, 59, 74, 0.08);
 }
 
 .square {list-style-type: square;
@@ -22,19 +42,28 @@ div {display: block;
                   padding: 0px;
                   color:white;
                   font-size: 30px;}
-                
 
-.bloque {display: block;
-        background-color: olive;
-        border-radius: 0%;
-        margin-right: 100px;}
+.bloque {
+    display: block;
+    background: linear-gradient(135deg, #526d42, #82965b);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    margin-right: 100px;
+    color: #ffffff;
+    box-shadow: var(--sombra);
+}
 
-.bloquevertical {display: block;
-                background-color: green;
-                border-radius: 0%;
-                margin: 0px;
-                padding: 0px;
-                width: 200px;}
+.bloquevertical {
+    display: block;
+    background: linear-gradient(180deg, #2f765e, #245b4b);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+    color: #ffffff;
+    box-shadow: var(--sombra);
+}
 
 .lineaVertical {display: flex;
                flex-direction: column;
@@ -45,78 +74,141 @@ div {display: block;
                text-align: center;
                padding: 20px 0px;}
 
-.rojo {background-color: red;
-      padding: 20px 20px;}
+.rojo {
+    background: linear-gradient(135deg, #c94c52, #a92f3c);
+    padding: 20px 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 14px rgba(169, 47, 60, 0.2);
+}
 
-.texto {background-color: #5c6b73;
-        color:white;
-        border-radius: 0%;
-        margin: 20px;
-        text-align: left;
-        padding: 20px;}
+.texto {
+    background: linear-gradient(135deg, #526873, #3e5662);
+    color: #ffffff;
+    border-radius: 12px;
+    margin: 20px;
+    text-align: left;
+    padding: 20px;
+    box-shadow: var(--sombra);
+}
 
-.titulo {text-align: left;
-        padding: 20px;}
+.titulo {
+    text-align: left;
+    padding: 20px;
+    color: var(--azul-oscuro);
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
 
-.texto2 {background-color: #E5E3B3;
-         border-radius: 0%;
-         margin: 20px;
-         text-align: left;}
+.texto2 {
+    background: #f4f0d9;
+    color: #3e453d;
+    border: 1px solid #e6dfbd;
+    border-radius: 12px;
+    margin: 20px;
+    text-align: left;
+    padding: 16px 20px;
+    box-shadow: 0 4px 12px rgba(75, 69, 38, 0.08);
+}
 
-.rosa {background-color: purple;}    
+.rosa {
+    background: linear-gradient(135deg, #9562a8, #704184);
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 14px rgba(112, 65, 132, 0.2);
+}
 
-.blanco {background-color: white;
-        font-size: 20px;}
-    
-.cuadro {border: 2px solid green;
-        padding: 1px 3px;
-        }
-        
+.blanco {
+    background-color: #ffffff;
+    color: var(--texto);
+    font-size: 20px;
+    border: 1px solid #e1e9ed;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(25, 59, 74, 0.07);
+}
+
+.cuadro {
+    border: 2px solid #5d927b;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
 header {
-    background-color: darkslategray;
+    background: linear-gradient(120deg, var(--azul-oscuro), var(--azul));
     display: flex;
     color: white;
-    align-items: center;   
-    padding: 15px 20px;}
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 5px 18px rgba(15, 39, 50, 0.2);
+}
 
-.dropdown {position: relative;
-           display: inline-block;}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 
 .dropdown summary {
-            list-style: none;
-            background-color: #3b4d6b;
-            color: #ffffff;
-            padding: 12px 24px;
-            border-radius: 30px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 15px;
-            user-select: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: background-color 0.2s;}
+    list-style: none;
+    background: linear-gradient(135deg, #3b5c75, #29485f);
+    color: #ffffff;
+    padding: 12px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    user-select: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dropdown summary:hover {
+    background: linear-gradient(135deg, #4b718d, #345b75);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
 
 .dropdown-menu {
-            position: absolute;
-            top: calc(100% + 8px);
-            left: 0;
-            background-color: #f0f2f5;
-            min-width: 230px;
-            border-radius: 6px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            list-style: none;
-            padding: 8px 0;
-            margin: 0;
-            z-index: 100;}
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    background-color: #f0f2f5;
+    min-width: 230px;
+    border-radius: 6px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    z-index: 100;
+}
 
 .dropdown-menu li a {
-            display: block;
-            padding: 10px 20px;
-            color: #1a2238;
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 500;
-            transition: background-color 0.2s;}
+    display: block;
+    padding: 10px 20px;
+    color: #1a2238;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .texto,
+    .texto2 {
+        margin: 12px;
+        padding: 15px;
+    }
+
+    .bloque {
+        margin-right: 12px;
+    }
+}
