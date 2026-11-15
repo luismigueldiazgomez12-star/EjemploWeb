@@ -31,8 +31,8 @@ document.getElementById("jugada-maquina").textContent =
 document.getElementById("mensaje").textContent = mensaje;
 
 document.getElementById("marcador").textContent =
-    `Partidas jugadas: ${partidas}`;
-document.getElementById("ganadas").textContent = `Ganadas: ${ganadas}`;
-document.getElementById("empatadas").textContent = `Empatadas: ${empatadas}`;
-document.getElementById("perdidas").textContent = "Perdidas: " + perdidas;
+    partidas;
+document.getElementById("ganadas").textContent = ganadas;
+document.getElementById("empatadas").textContent = empatadas;
+document.getElementById("perdidas").textContent = perdidas;
 }

@@ -118,3 +118,118 @@ button{
     color: var(--color-principal);
     padding-left: 19px;
 }
+
+.contenedor-juego {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: var(--color-superficie);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra-media);
+    border: 1px solid var(--color-borde);
+}
+
+.contenedor-juego h1 {
+    color: var(--color-principal);
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contenedor-juego h2 {
+    color: var(--color-secundario);
+    font-size: 20px;
+    margin-top: 0;
+}
+
+
+.seccion-botones {
+    text-align: center;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+
+.contenedor-juego button {
+    background-color: var(--color-secundario);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 6px;
+    box-shadow: var(--sombra-suave);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contenedor-juego button:hover {
+    background-color: var(--color-principal);
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-media);
+}
+
+.contenedor-juego button:active {
+    transform: translateY(0);
+}
+
+.marcador {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    background-color: var(--color-fondo);
+    padding: 16px 20px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--color-texto);
+    border: 1px solid var(--color-borde);
+}
+
+.marcador p {
+    margin: 4px 0;
+}
+
+
+.seccion-resultado {
+    background: linear-gradient(135deg, #f8fafb, #eaf1f4);
+    border-left: 5px solid var(--color-acento);
+    padding: 18px 22px;
+    border-radius: 8px;
+    border-top: 1px solid var(--color-borde);
+    border-right: 1px solid var(--color-borde);
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.seccion-resultado h3 {
+    color: var(--color-principal);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.seccion-resultado p {
+    margin: 6px 0;
+    color: var(--color-texto);
+    font-size: 15px;
+}
+
+
+@media (max-width: 500px) {
+    .contenedor-juego {
+        margin: 15px;
+        padding: 20px;
+    }
+    .contenedor-juego button {
+        padding: 10px 16px;
+        font-size: 14px;
+        margin: 4px;
+    }
+    .marcador {
+        grid-template-columns: 1fr;
+    }
+}
