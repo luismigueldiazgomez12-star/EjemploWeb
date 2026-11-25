@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <mensaje>
+
+        <remite 
+        nombre="Juan Pérez"
+        email="juan@gmail.es"
+        ></remite>
+
+        <destinatario
+        nombre="Pepe"
+        email = "pepe@gmail.es"
+        ></destinatario>
+
+        <asunto><Felicitaciones></Felicitaciones></asunto>
+        <parrafo>
+            <Felicitaciones_por_tu_ascenso></Felicitaciones_por_tu_ascenso>
+            <Felicidades></Felicidades>
+            <Un_Saludo></Un_Saludo>
+        </parrafo>
+        
+        <comentario>Felicitaciones</comentario>
+    </mensaje>
+
+    

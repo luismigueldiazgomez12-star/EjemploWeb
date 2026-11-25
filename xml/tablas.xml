@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabla>
+    <nombre id="1">
+        <fecha>41934</fecha>
+        <producto>Pdto001</producto>
+        <comprador>Pepe</comprador>
+        <unidades>5</unidades>
+        <importe>5,50</importe>
+    </nombre>
+    <nombre id="2">
+        <fecha>41895</fecha>
+        <producto>Pdto002</producto>
+        <comprador>Ana</comprador>
+        <unidades>11</unidades>
+        <importe>12,10</importe>
+    </nombre>
+    <nombre id="3">
+        <fecha>41744</fecha>
+        <producto>Pdto003</producto>
+        <comprador>Pepe</comprador>
+        <unidades>1</unidades>
+        <importe>1,10</importe>
+    </nombre>
+    <nombre id ="4">
+        <fecha>41931</fecha>
+        <producto>Pdto001</producto>
+        <comprador>Ana</comprador>
+        <unidades>3</unidades>
+        <importe>3,30</importe>
+    </nombre>
+    <nombre id="5">
+        <fecha>41864</fecha>
+        <producto>Pdto002</producto>
+        <comprador>Pepe</comprador>
+        <unidades>11</unidades>
+        <importe>12,10</importe>
+    </nombre>
+    <nombre id="6">
+        <fecha>41994</fecha>
+        <producto>Pdto003</producto>
+        <comprador>Ana</comprador>
+        <unidades>5</unidades>
+        <importe>5,50</importe>
+    </nombre>
+</tabla>
