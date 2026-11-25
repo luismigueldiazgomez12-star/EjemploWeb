@@ -1,0 +1,28 @@
+<!DOCTYOE htm>
+<html lang = "es">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Generar IPS</title>
+        <link rel = "stylesheet" href = "css/estilosIP.css">
+        <script src = "js/generarIP.js"></script>
+</html>
+<body>
+    <main>
+        <h1>Generador de direcciones IP</h1>
+        <p>Simulador de una red domestica IPv4.</p>
+        <section>
+            <h2>1.Generador de direcciones IP</h2>
+            <p>Red simulada: <strong>192.168.1.0/24</strong></p>
+
+
+            <button onclick = "mostrarDireccionRed()">Mostrar dirección de red</button>
+            <button onclick = "mostrarPuertaEnlace()">Mostrar puerta de enlace</button>
+            <button onclick = "generarIP()">Generar IP aleatoria</button>
+            <button onclick = "mostrarBroadcast()">Mostrar dirección de broadcast</button>
+            <button onclick = "mostrarMascara()">Mostrar mascara de subred</button>
+
+            <p id = "ip">0.0.0.0</p>
+            <p id ="resultado"></p>
+        </section>
+    </main>
+</body>
