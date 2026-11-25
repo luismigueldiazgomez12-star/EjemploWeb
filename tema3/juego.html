@@ -12,38 +12,49 @@
     <details class="dropdown">
 	    <summary>Paginas Web</summary>
 	        <ul class="dropdown-menu">
-		        <li><a class="BOTON" href="index.html">Inicio</a></li>
-		        <li><a class="BOTON" href="formulario.html">Formulario</a></li>
-		        <li><a class="BOTON" href="horario.html">Horario</a></li>
-		        <li><a class="BOTON" href="EjercicioFormatoTexto.html">Ejercicio Formato de Texto</a></li>
-		        <li><a class="BOTON" href="EjercicioFormatoTexto2.html">Ejercicio Formato de Texto 2</a></li>
-		        <li><a class="BOTON" href="Ejercicio1Lista.html">Ejercicio Lista1</a></li>
-		        <li><a class="BOTON" href="Ejercicio2Lista.html">Ejercicio Lista 2</a></li>
-		        <li><a class="BOTON" href="Ejercicio3Lista.html">Ejercicio Lista 3</a></li>
-		        <li><a class="BOTON" href="EjercicioTablas.html">Ejercicio Tablas</a></li>
-		        <li><a class="BOTON" href="tema3/juego.html">Juego Piedra, Papel y Tijera</a></li>
-		        <li><a class="BOTON" href="tema3/calculadora.html">Calculadora</a></li>
+		        <li><a class="BOTON" href="../index.html">Inicio</a></li>
+		        <li><a class="BOTON" href="../formulario.html">Formulario</a></li>
+		        <li><a class="BOTON" href="../horario.html">Horario</a></li>
+		        <li><a class="BOTON" href="../EjercicioFormatoTexto.html">Ejercicio Formato de Texto</a></li>
+		        <li><a class="BOTON" href="../EjercicioFormatoTexto2.html">Ejercicio Formato de Texto 2</a></li>
+		        <li><a class="BOTON" href="../Ejercicio1Lista.html">Ejercicio Lista1</a></li>
+		        <li><a class="BOTON" href="../Ejercicio2Lista.html">Ejercicio Lista 2</a></li>
+		        <li><a class="BOTON" href="../Ejercicio3Lista.html">Ejercicio Lista 3</a></li>
+		        <li><a class="BOTON" href="../EjercicioTablas.html">Ejercicio Tablas</a></li>
+		        <li><a class="BOTON" href="juego.html">Juego Piedra, Papel y Tijera</a></li>
+		        <li><a class="BOTON" href="calculadora.html">Calculadora</a></li>
+                <li><a class="BOTON" href="Estilos.html">Cambia Modos</a></li>
 	        </ul>
 	    </details>
     </header>
-    <h1>Juego de Piedra, Papel o Tijera</h1>
-    <div class="container">
-        <div class="jugador">
-            <h2>Jugador</h2>
-            <button type="button" onclick="juego('piedra')">Piedra</button>
-            <button type="button" onclick="juego('papel')">Papel</button>
-            <button type="button" onclick="juego('tijera')">Tijera</button>
-        </div>
+    <main>
+        <div class="contenedor-juego">
+            <h1>Juego de Piedra, Papel o Tijera</h1>
+            
+            <div class="seccion-botones">
+                <h2>Elige tu jugada:</h2>
+                <button onclick="juego('piedra')">Piedra</button>
+                <button onclick="juego('papel')">Papel</button>
+                <button onclick="juego('tijera')">Tijera</button>
+            </div>
 
-        <p id="marcador">Partidas jugadas: 0</p>
-        <p id="ganadas">Ganadas: 0</p>
-        <p id="empatadas">Empatadas: 0</p>
-        <p id="perdidas">Perdidas: 0</p>
-        
-        <section id="resultado">
-            <h2>Resultado:</h2>
-            <p id="jugada-jugador">Tu jugada aparecera aqui.</p>
-            <p id="jugada-maquina">La jugada de la maquina aparecerá.</p>
-            <p id="mensaje"></p>
-        </section>
+            <div class="marcador">
+                <p>Partidas jugadas: <span id="marcador">0</span></p>
+                <p>Ganadas:<span id="ganadas">0</span></p>
+                <p>Empatadas:<span id="empatadas">0</span></p>
+                <p>Perdidas:<span id="perdidas">0</span></p>
+            </div>
+
+            <div class="seccion-resultado">
+                <section id="resultado">
+                <h3>Resultado:</h3>
+                <p id="jugada-jugador">Tu jugada aparecerá aquí.</p>
+                <p id="jugada-maquina">La jugada de la maquina aparecerá.</p>
+                <p id="mensaje"></p>
+                </section>
+            </div>
+        </div>
+    </main>
+
 </body>
+</html>

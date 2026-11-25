@@ -122,6 +122,107 @@ header {
 }
 
 
+.contenedor-calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+table.calculadora {
+    width: 320px;
+    margin: 0 auto;
+    padding: 18px;
+    background-color: var(--color-principal);
+    border-radius: 18px;
+    box-shadow: var(--sombra-media);
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+table.calculadora td {
+    border: none;
+    padding: 0;
+    background: transparent !important;
+}
+
+
+table.calculadora input[type="text"] {
+    width: 100%;
+    height: 64px;
+    background-color: #102a32;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: right;
+    padding: 0 16px;
+    margin-bottom: 6px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+
+table.calculadora input[type="button"],
+table.calculadora button {
+    width: 100%;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: inherit;
+    color: var(--color-texto);
+    background-color: var(--color-superficie);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 3px 0 #b8c7ce;
+    transition: transform 0.1s ease, background-color 0.2s ease;
+}
+
+table.calculadora input[type="button"]:hover,
+table.calculadora button:hover {
+    background-color: #eaf1f4;
+}
+
+table.calculadora input[type="button"]:active,
+table.calculadora button:active {
+    transform: translateY(2px);
+    box-shadow: 0 1px 0 #b8c7ce;
+}
+
+
+table.calculadora .operador {
+    background-color: var(--color-secundario);
+    color: #ffffff;
+    box-shadow: 0 3px 0 #1b3842;
+}
+
+table.calculadora .operador:hover {
+    background-color: #3b7182;
+}
+
+/* Botón Igual (=) */
+table.calculadora .igual {
+    background-color: var(--color-acento);
+    color: #173b46;
+    box-shadow: 0 3px 0 #b58232;
+}
+
+table.calculadora .igual:hover {
+    background-color: #eab765;
+}
+
+/* Botón Borrar (C) */
+table.calculadora .borrar {
+    background-color: #b83d45;
+    color: #ffffff;
+    box-shadow: 0 3px 0 #82262c;
+}
+
+table.calculadora .borrar:hover {
+    background-color: #cc4952;
+}
+
 .ENT { background-color: #f4a340; color: #33220b; }
 .LEN { background-color: #b99ae8; color: #281a3d; }
 .SIS { background-color: #df7777; color: #3b1111; }

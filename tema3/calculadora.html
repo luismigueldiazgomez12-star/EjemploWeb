@@ -1,5 +1,9 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <script src="../js/calculadora.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../JS/calculadora.js"></script>
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body>
@@ -7,57 +11,58 @@
 		<details class="dropdown">
 	    <summary>Paginas Web</summary>
 	        <ul class="dropdown-menu">
-		        <li><a class="BOTON" href="index.html">Inicio</a></li>
-		        <li><a class="BOTON" href="formulario.html">Formulario</a></li>
-		        <li><a class="BOTON" href="horario.html">Horario</a></li>
-		        <li><a class="BOTON" href="EjercicioFormatoTexto.html">Ejercicio Formato de Texto</a></li>
-		        <li><a class="BOTON" href="EjercicioFormatoTexto2.html">Ejercicio Formato de Texto 2</a></li>
-		        <li><a class="BOTON" href="Ejercicio1Lista.html">Ejercicio Lista1</a></li>
-		        <li><a class="BOTON" href="Ejercicio2Lista.html">Ejercicio Lista 2</a></li>
-		        <li><a class="BOTON" href="Ejercicio3Lista.html">Ejercicio Lista 3</a></li>
-		        <li><a class="BOTON" href="EjercicioTablas.html">Ejercicio Tablas</a></li>
-		        <li><a class="BOTON" href="tema3/juego.html">Juego Piedra, Papel y Tijera</a></li>
-		        <li><a class="BOTON" href="tema3/calculadora.html">Calculadora</a></li>
+		        <li><a class="BOTON" href="../index.html">Inicio</a></li>
+		        <li><a class="BOTON" href="../formulario.html">Formulario</a></li>
+		        <li><a class="BOTON" href="../horario.html">Horario</a></li>
+		        <li><a class="BOTON" href="../EjercicioFormatoTexto.html">Ejercicio Formato de Texto</a></li>
+		        <li><a class="BOTON" href="../EjercicioFormatoTexto2.html">Ejercicio Formato de Texto 2</a></li>
+		        <li><a class="BOTON" href="../Ejercicio1Lista.html">Ejercicio Lista1</a></li>
+		        <li><a class="BOTON" href="../Ejercicio2Lista.html">Ejercicio Lista 2</a></li>
+		        <li><a class="BOTON" href="../Ejercicio3Lista.html">Ejercicio Lista 3</a></li>
+		        <li><a class="BOTON" href="../EjercicioTablas.html">Ejercicio Tablas</a></li>
+		        <li><a class="BOTON" href="juego.html">Juego Piedra, Papel y Tijera</a></li>
+		        <li><a class="BOTON" href="calculadora.html">Calculadora</a></li>
+                <li><a class="BOTON" href="Estilos.html">Cambia Modos</a></li>
 	        </ul>
 	    </details>
     </header>
-    <table>
-        <thead>
+    <main class="contenedor-calculadora">
+        <table class="calculadora">
             <tr>
                 <td colspan="4">
-                    <input type="text" id="pantalla" readonly>
+                    <input type="text" id="pantalla" readonly placeholder="0">
                 </td>
             </tr>
-        </thead>
-
-        <tbody>
-                <tr>
-                    <td><button onclick="escribir(7)">7</button></td>
-                    <td><button onclick="escribir(8)">8</button></td>
-                    <td><button onclick="escribir(9)">9</button></td>
-                    <td><button onclick="escribir('/')">/</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="escribir(4)">4</button></td>
-                    <td><button onclick="escribir(5)">5</button></td>
-                    <td><button onclick="escribir(6)">6</button></td>
-                    <td><button onclick="escribir('*')">*</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="escribir(1)">1</button></td>
-                    <td><button onclick="escribir(2)">2</button></td>
-                    <td><button onclick="escribir(3)">3</button></td>
-                    <td><button onclick="escribir('-')">-</button></td>
-                </tr>
-                <tr>
-                    <td><button onclick="escribir(0)">0</button></td>
-                    <td><button onclick="escribir('.')">.</button></td>
-                    <td><button onclick="resolver('=')">=</button></td>
-                    <td><button onclick="escribir('+')">+</button></td>
-                </tr>
-                <tr>
-                    <td colspan="4"><button onclick="borrar()">C</button></td>
-                </tr>
-        </tbody>
-    </table>
+            <tr>
+                <td><input type="button" onclick="escribir(7)" value="7"></td>
+                <td><input type="button" onclick="escribir(8)" value="8"></td>
+                <td><input type="button" onclick="escribir(9)" value="9"></td>
+                <td><input type="button" onclick="escribir('/')" value="/" class="operador"></td>
+            </tr>
+            <tr>
+                <td><input type="button" onclick="escribir(4)" value="4"></td>
+                <td><input type="button" onclick="escribir(5)" value="5"></td>
+                <td><input type="button" onclick="escribir(6)"value="6"></td>
+                <td><input type="button" value="*" class="operador" onclick="escribir('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="escribir(1)"></td>
+                <td><input type="button" value="2" onclick="escribir(2)"></td>
+                <td><input type="button" value="3" onclick="escribir(3)"></td>
+                <td><input type="button" value="-" class="operador" onclick="escribir('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="escribir(0)"></td>
+                <td><input type="button" value="." onclick="escribir('.')"></td>
+                <td><input type="button" value="=" class="igual" onclick="resolver('=')"></td>
+                <td><input type="button" value="+" class="operador" onclick="escribir('+')"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button onclick="borrar()">C</button>
+                </td>
+            </tr>
+        </table>
+    </main>
 </body>
+</html>
